@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.5",
+    "@emailjs/browser": "^4.4.1",
     "aos": "^3.0.0-beta.6",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "core-js": "^3.6.4",

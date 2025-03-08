@@ -7,53 +7,21 @@
         pcard: !nightMode,
         'bg-dark3': nightMode,
       }"
+      style=" height: 560px;" 
+
     >
-      <div style="height: 180px;">
-        <img
-          class="card-img-top"
+      <div style="height: 480px;">
+        <video 
+          class="card-video w-100 h-100" 
           :src="portfolio.pictures[0].img"
-          alt="Card image cap"
-        />
+          controls 
+          playsinline 
+          @click="toggleFullScreen($event)">
+        </video>
       </div>
       <div class="card-body pborder-top">
         <h5 class="title2">{{ portfolio.name }}</h5>
-        <div>
-          <div class="pb-1 bheight">
-            <span
-              class="badge mr-2 mb-2 "
-              v-for="tech in portfolio.technologies"
-              :key="tech"
-              :class="{ 'bg-dark4': nightMode }"
-              >{{ tech }}</span
-            >
-          </div>
-          <p
-            class="title3 m-0 pb-2 pheight pt-1"
-            v-html="
-              portfolio.description.length > 100
-                ? portfolio.description.substring(0, 105) + '...'
-                : portfolio.description
-            "
-          >
-          </p>
-        </div>
-        <div class="text-center mt-2">
-          <button
-            href=""
-            class="btn-sm btn btn-outline-secondary no-outline"
-            @click.prevent="showModal"
-          >
-            read more
-          </button>
-          <button
-            href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-4"
-            v-if="portfolio.visit"
-            @click.prevent="open(portfolio.visit)"
-          >
-            visit website
-          </button>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -207,4 +175,27 @@ div.img-div {
 .bg-dark4 {
   background-color: #494e55 !important;
 }
+.video-container {
+  height: 180px; /* Fixed height for normal view */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-video {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Full-screen mode */
+.card-video:fullscreen,
+.card-video:-webkit-full-screen {
+  width: auto;
+  height: 100vh;
+  max-width: 100%;
+  object-fit: contain;
+  background-color: black;
+}
+
 </style>

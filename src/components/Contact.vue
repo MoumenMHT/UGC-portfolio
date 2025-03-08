@@ -146,43 +146,44 @@ export default {
       }
     },
     sendEmail() {
-      if (!this.email || !this.name || !this.text) {
-        this.showSnackbar = true;
-        this.snackbarMessage = "Please all the fields";
-        this.snackbarColor = "rgb(212, 149, 97)";
-      } else {
-        var obj = {
-          user_email: this.email,
-          from_name: this.name,
-          message_html: this.text,
-          to_name: "Hrishikesh Paul",
-        };
+  if (!this.email || !this.name || !this.text) {
+    this.showSnackbar = true;
+    this.snackbarMessage = "Please fill all the fields";
+    this.snackbarColor = "rgb(212, 149, 97)";
+    return;
+  }
 
-        emailjs
-          .send(
-            config.emailjs.serviceID,
-            config.emailjs.templateID,
-            obj,
-            config.emailjs.userID
-          )
-          .then(
-            (result) => {
-              this.showSnackbar = true;
-              this.snackbarMessage = "Thanks! Message recieved.";
-              this.snackbarColor = "#1aa260";
+  const obj = {
+    user_email: this.email,
+    from_name: this.name,
+    message: this.text,  // Ensure this matches your EmailJS template fields
+    to_name: "Hrishikesh Paul",
+  };
 
-              this.email = "";
-              this.text = "";
-              this.name = "";
-            },
-            (error) => {
-              this.showSnackbar = true;
-              this.snackbarMessage = "Oops! Something went wrong.";
-              this.snackbarColor = "rgb(212, 149, 97)";
-            }
-          );
-      }
-    },
+  emailjs.send(
+    "service_84r7vev", // Try hardcoding it to debug
+    "template_aiessq8",
+    obj,
+    "3NMPqG_8yMFI7qG_1"
+  )
+  .then((result) => {
+      console.log("Email sent:", result);
+      this.showSnackbar = true;
+      this.snackbarMessage = "Thanks! Message received.";
+      this.snackbarColor = "#1aa260";
+      
+      this.email = "";
+      this.text = "";
+      this.name = "";
+  })
+  .catch((error) => {
+      console.error("EmailJS error:", error);
+      this.showSnackbar = true;
+      this.snackbarMessage = "Oops! Something went wrong.";
+      this.snackbarColor = "rgb(212, 149, 97)";
+  });
+}
+
   },
 };
 </script>

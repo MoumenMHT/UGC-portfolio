@@ -26,11 +26,11 @@
       />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-        <v-tab title="development">
+        <v-tab title="Videos">
           <br />
           <div class="row">
             <div
-              class="col-xl-4 col-bg-4 col-md-6 col-sm-12"
+              class="col-xl-4 col-bg-4 col-md-6 col-sm-12 "
               v-for="(portfolio, idx) in portfolio_info"
               :key="portfolio.name"
             >
@@ -54,7 +54,7 @@
           </div>
         </v-tab>
 
-        <v-tab title="design">
+        <v-tab title="Pictures">
           <div class="row">
             <div
               v-for="(design, idx) in desgin_info"
@@ -95,13 +95,7 @@
                   <span class="date ml-1">{{design.date}}</span>
                 </div>
 
-                <button
-                  style="height: 31px; margin-top: 5px;"
-                  class="btn-sm btn btn-outline-secondary no-outline"
-                  @click.prevent="showDesignModalFn(design)"
-                >
-                  read more
-                </button>
+               
               </div>
             </div>
           </div>

@@ -25,32 +25,22 @@
           <div class="text-center pb-4">
             <button
               class="btn btn-outline-secondary mx-2 "
-              @click="open('linkedin')"
-              v-tooltip.bottom="'LinkedIn'"
+              @click="open('tiktok')"
+              v-tooltip.bottom="'tiktok'"
             >
-              <i class="fab fa-linkedin"></i>
-            </button>
+            <i class="fab fa-tiktok"></i>
+                      </button>
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('github')"
-              v-tooltip.bottom="'GitHub'"
+              @click="open('instagram')"
+              v-tooltip.bottom="'instagram'"
             >
-              <i class="fab fa-github"></i>
+              <i class="fab fa-instagram"></i>
             </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
-              v-tooltip.bottom="'AngelList'"
-            >
-              <i class="fab fa-angellist"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
-              v-tooltip.bottom="'Resume'"
-            >
-              <i class="fa fa-file"></i>
-            </button>
+
+            <div class="mt-3">
+              <a href="mailto:Temmamsaria@gmail.com" class="text-secondary">Temmamsaria@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
@@ -78,8 +68,8 @@ export default {
       picture: info.flat_picture,
       description: info.description,
       name: info.name,
-      linkedin: info.links.linkedin,
-      github: info.links.github,
+      tiktok: info.links.tiktok,
+      instagram: info.links.instagram,
       angellist: info.links.angellist,
       resume: info.links.resume
     };
@@ -87,11 +77,11 @@ export default {
   methods: {
     open(link) {
       switch (link) {
-        case "linkedin":
-          window.open(this.linkedin, "_blank");
+        case "tiktok":
+          window.open(this.tiktok, "_blank");
           break;
-        case "github":
-          window.open(this.github, "_blank");
+        case "instagram":
+          window.open(this.instagram, "_blank");
           break;
         case "angellist":
           window.open(this.angellist, "_blank");

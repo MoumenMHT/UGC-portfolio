@@ -6,35 +6,28 @@
           class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow"
           style="color: white;"
         >
-          <span>© 2020 Copyright: Hrishikesh Paul</span>
+          <span>© 2024 Copyright: Saria UGC</span>
         </div>
 
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
           <div class="text-center">
             <button
               class="btn btn-outline-secondary mx-2 "
-              @click="open('linkedin')"
+              @click="open('tiktok')"
+              v-tooltip.bottom="'tiktok'"
             >
-              <i class="fab fa-linkedin"></i>
-            </button>
+            <i class="fab fa-tiktok"></i>
+                      </button>
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('github')"
+              @click="open('instagram')"
+              v-tooltip.bottom="'instagram'"
             >
-              <i class="fab fa-github"></i>
+              <i class="fab fa-instagram"></i>
             </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
-            >
-              <i class="fab fa-angellist"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
-            >
-              <i class="fa fa-file"></i>
-            </button>
+            <div class="mt-3">
+              <a href="mailto:Temmamsaria@gmail.com" class="text-white">Temmamsaria@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
@@ -49,8 +42,8 @@ export default {
   name: "Footer",
   data() {
     return {
-      linkedin: info.links.linkedin,
-      github: info.links.github,
+      tiktok: info.links.tiktok,
+      instagram: info.links.instagram,
       angellist: info.links.angellist,
       resume: info.links.resume,
     };
@@ -58,11 +51,11 @@ export default {
   methods: {
     open(link) {
       switch (link) {
-        case "linkedin":
-          window.open(this.linkedin, "_blank");
+        case "tiktok":
+          window.open(this.tiktok, "_blank");
           break;
-        case "github":
-          window.open(this.github, "_blank");
+        case "instagram":
+          window.open(this.instagram, "_blank");
           break;
         case "angellist":
           window.open(this.angellist, "_blank");

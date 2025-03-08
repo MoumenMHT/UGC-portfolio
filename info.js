@@ -1,7 +1,7 @@
 let info = {
   name: "Hrishikesh Paul",
-  logo_name: "paul",
-  flat_picture: require("./src/assets/potrait.jpg"),
+  logo_name: "Saria-UGC",
+  flat_picture: require("./src/assets/saria.jpg"),
   config: {
     use_cookies: true,
     navbar: {
@@ -9,10 +9,10 @@ let info = {
     }
   },
   description:
-    "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
+" Hi, I'm Saria, a passionate UGC creator dedicated to crafting engaging, authentic, and high-converting content for brands. With a keen eye for aesthetics, storytelling, and audience engagement, I specialize in creating short-form videos, product reviews, lifestyle content, and unboxings that connect with your target audience.I understand the importance of authenticity in marketing and strive to produce content that feels natural, relatable, and seamlessly blends with your brand’s voice. Whether it’s showcasing a product in action, creating engaging TikToks, or crafting compelling Instagram Reels, my goal is to drive brand awareness, engagement, and conversions.Let’s collaborate to bring your brand to life through impactful UGC!",
   links: {
-    linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
-    github: "https://github.com/hrishikeshpaul",
+    tiktok: "https://www.tiktok.com/@saria_ugc",
+    instagram: "https://www.instagram.com/saria_ugc/",
     angellist: "https://angel.co/u/hrishikesh-paul",
     resume:
       "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
@@ -166,20 +166,13 @@ let info = {
   ],
   portfolio: [
     {
-      name: "Sheet Recognizer",
+      name: "Moroccanoil hand cream",
       pictures: [
         {
-          img: require("./src/assets/portfolio/msr/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/msr/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/msr/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/msr/four.png")
-        }
+          img: require("./src/assets/portfolio/msr/vedio1.mp4")
+        },  
+        
+        
       ],
       technologies: ["Computer Vision", "OpenCV", "AI", "Flask", "Sockets"],
       category: "Algorithm",
@@ -191,23 +184,12 @@ let info = {
         "Music Sheet Recognizer (MSR) highlights basic Image Processing and Recognition. Like Optical Character Recognition, this tool is used to detect music notes and rests. It makes use of basic Computer Vision techniques such as Convolution, Edge Detections, Hough Transforms and Template Matching to detect notes and rests on a music sheet. "
     },
     {
-      name: "NoQ Job Portal",
+      name: "Iconic London Hilighter",
       pictures: [
         {
-          img: require("./src/assets/portfolio/noq/logo.png")
+          img: require("./src/assets/portfolio/msr/vedio2.mp4")
         },
-        {
-          img: require("./src/assets/portfolio/noq/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/noq/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/noq/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/noq/four.png")
-        }
+       
       ],
       technologies: ["Node", "Vue", "Express", "MongoDB", "Heroku"],
       category: "Website",
@@ -218,10 +200,10 @@ let info = {
         "No Q, is a revolutionary tool which allows for both employers and students to skip the hassle seen in modern day career fairs. For the students, there is an intuitive profile builder where you can add things like education, skills, certifications, honors, and experiences. No Q is not only good for students, but employers as well! A common problem at modern career fairs is the number of unqualified candidates who waste their time when they could be chatting with someone else. With No Q, only the students who meet the positions’ criteria will be able to apply, and from there the recruiter can invite them to talk in more detail at the career fair through our intuitive messaging system."
     },
     {
-      name: "POST",
+      name: "Maxon Hydramax Cream",
       pictures: [
         {
-          img: require("./src/assets/portfolio/post/one.png")
+          img: require("./src/assets/portfolio/msr/vedio4.mp4")
         },
         {
           img: require("./src/assets/portfolio/post/two.png")
@@ -242,14 +224,12 @@ let info = {
         "Post is a simple algorithm that was developed to tagging a word corresponding to its part of speech. The algorithm makes of a probabilisitic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling."
     },
     {
-      name: "Suicide Analyzer",
+      name: "The ordinary niacinamide serum",
       pictures: [
         {
-          img: require("./src/assets/portfolio/suicide/suicide-analyzer.png")
+          img: require("./src/assets/portfolio/msr/vedio3.mp4")
         },
-        {
-          img: require("./src/assets/portfolio/suicide/suicide2-original.png")
-        }
+        
       ],
       technologies: ["Node", "Angular", "Express", "Leaflet", "Pandas"],
       category: "Website",
@@ -260,20 +240,12 @@ let info = {
         "This is a web application, uses a map to demonstrate the number suicides committed around the globe, according to a dataset provided by the WHO. The application consists of a Leaflet map that colors every nation, based on the number of suicides that have been committed in that country, for that year. It provides us with the capability to select the data as well as the continent."
     },
     {
-      name: "Sentiment Analyzer",
+      name: "Rhode Lip Tints",
       pictures: [
         {
-          img: require("./src/assets/portfolio/smit/one.png")
+          img: require("./src/assets/portfolio/msr/vedio5.mp4")
         },
-        {
-          img: require("./src/assets/portfolio/smit/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/smit/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/smit/four.png")
-        }
+       
       ],
       technologies: ["LSTM", "Keras", "Angular", "Tweepy", "Heroku", "Python"],
       category: "Alogrithm",
@@ -284,17 +256,12 @@ let info = {
         "Developing this for the final round of Smart India Hackathon 2018, the web application is a platform for showcasing the sentiment of the tweets of the people in the Telangana region in India on policy satisfaction, services and problem definitions. The minimal UI design consists of different bins, that have their respective tweets, all scraped from twitter. There is also a simple graphical representation denoting the sentiment of the tweets."
     },
     {
-      name: "Clumpr",
+      name: "Cien Facial Wash",
       pictures: [
         {
-          img: require("./src/assets/portfolio/clumpr/logo.png")
+          img: require("./src/assets/portfolio/msr/vedio6.mp4")
         },
-        {
-          img: require("./src/assets/portfolio/clumpr/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/clumpr/two.png")
-        }
+       
       ],
       technologies: ["Node", "Angular", "Express", "MySQL", "Facebook API"],
       category: "Web App",
@@ -304,128 +271,74 @@ let info = {
       description:
         'Clumpr is an online social event planning assistant that - using information about similar events happening in similar locations around the same time, friends who frequently attend the same events, and mutual friends - helps users to collaborate, combine, and attend events together, effectively "clumping" people and activities in a way that makes intuitive sense.'
     },
-    {
-      name: "Nutricare",
-      pictures: [
-        {
-          img: require("./src/assets/portfolio/nc/one.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/two.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/three.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/four.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/five.png")
-        },
-        {
-          img: require("./src/assets/portfolio/nc/six.png")
-        }
-      ],
-      technologies: ["Node", "Angular", "Express", "MongDB", "Medical"],
-      category: "Website",
-      github: "https://github.com/hrishikeshpaul/clumpr",
-      date: "May, 2017 - Aug, 2017",
-      visit: "https://angel.co/projects/576300-nutricare",
-      description:
-        "Nutricare is a basic health website for users(patients) to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects (patient) for a particular problem statement. Typically, a researcher will enter food item consumed by subjects over a period of time (Ex - 24hrs, or 1 week, or 1 month etc)."
-    }
+   
   ],
   portfolio_design: [
     {
-      name: "Guituna",
-      title: "Guituna - Mockup Design",
+      name: "Belo & Kiss Glow Products",
+      title: "Belo & Kiss Glow Products",
       pictures: [
         {
-          img: require("./src/assets/designs/coursera1/MoodBoard.png"),
+          img: require("./src/assets/designs/coursera1/image1.jpg"),
           title: "MoodBoard"
         },
-        {
-          img: require("./src/assets/designs/coursera1/Mockups 1.png"),
-          title: "Mockups 1"
-        },
-        {
-          img: require("./src/assets/designs/coursera1/Mockups 2.png"),
-          title: "Mockups 2"
-        },
-        {
-          img: require("./src/assets/designs/coursera1/App Elements.png"),
-          title: "App Elements"
-        }
+      
       ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "May, 2020 - Jun, 2020",
-      visit: "",
-      description:
-        "Guituna is a simple, lightweight and intuitive guitar tuner, that provides different modes of guitars based on your usage. You can either select a specific string to tune, or free tune your guitar based on the frequency shown on the meter. Guituna also provides a handful of different tunings to help explore various tuning paradigms. There is also an array of settings that can be configured to your liking based on the devices you're using. <br/><br/>The interface aims to highlight the use of a minimal design and providing just enough controls to make for a great tuner, while exposing various possibilities of guitarists to explore."
-    },
+          },
     {
-      name: "Pantree",
-      title: "Pantree - Mockup Design",
+      name: "VERLUMI Skincare Products",
+      title: "VERLUMI Skincare Products ",
       pictures: [
         {
-          img: require("./src/assets/designs/pantree/MoodBoard.png"),
+          img: require("./src/assets/designs/coursera1/image2.jpg"),
           title: "Moodboard"
         },
-        {
-          img: require("./src/assets/designs/pantree/1.png"),
-          title: "Mockups 1"
-        },
-        {
-          img: require("./src/assets/designs/pantree/2.png"),
-          title: "Mockups 2"
-        }
+       
       ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "May, 2020 - July, 2020",
-      visit: "",
-      description:
-        "Pantree is a recipiece finding and recommending application. It is often the case that you have run to your closest grocery store just to pick up one item that is missing in your kitchen. Pantree keeps a track of all your ingredients, and suggests recipes based on your meal preferences and past recipes. <br/><br/> The goal of the interface is to keep it similar to various recipe/food apps to reduce the learning required by the user, but also provide a smooth interface for users to seemlessly browse through recipes and ingredients."
     },
     {
-      name: "Bunder",
-      title: "Bunder - MVP Proposal",
+      name: "Flower knows black swan collection",
+      title: "Flower knows black swan collection",
       pictures: [
         {
-          img: require("./src/assets/designs/bunder/Moodboard.png"),
+          img: require("./src/assets/designs/coursera1/image3.jpg"),
           title: "Moodboard"
         },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 1.png"),
-          title: "Mockup 1"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 2.png"),
-          title: "Mockup 2"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Mockup 3.png"),
-          title: "Mockup 3"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Market Research 1.png"),
-          title: "Market Research 1"
-        },
-        {
-          img: require("./src/assets/designs/bunder/Market Research 2.png"),
-          title: "Market Research 2"
-        }
+     
       ],
-      technologies: ["XD", "Illustrator"],
-      category: "Visual Design",
-      github: "",
-      date: "May, 2020 - July, 2020",
-      visit: "",
-      description:
-        "Bunder is an intuitive web platform for micro-communities to share sensitive data with privacy within the community and allow engagement amongst them. Our aim is two-fold - Co-existing and Collaboration. The former is executed by providing a platform for communities that are geographically positioned in the same proximity (Housing societies, Dorms, Apartment Complexes) to have and share data (exact apartment addresses, phone number, apartment housing rules, individuals tested positive for COVID-19) in an exclusive platform. The latter is to give these people in the community the ability to carry out a task you are physically or remotely unable to do; with dignity and ease."
+     },
+    {
+      name: "Glow White Caps",
+      title: "Glow White Caps",
+      pictures: [
+        {
+          img: require("./src/assets/designs/coursera1/image4.jpg"),
+          title: "Moodboard"
+        },
+     
+      ],
+    },
+    {
+      name: "Glow White Caps",
+      title: "Glow White Caps",
+      pictures: [
+        {
+          img: require("./src/assets/designs/coursera1/image5.jpg"),
+          title: "Moodboard"
+        },
+     
+      ],
+    },
+    {
+      name: "Flower knows black swan collection",
+      title: "Flower knows black swan collection",
+      pictures: [
+        {
+          img: require("./src/assets/designs/coursera1/image6.jpg"),
+          title: "Moodboard"
+        },
+     
+      ],
     }
   ],
   recommendations: [
