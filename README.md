@@ -16,7 +16,7 @@
 <!-- 
 ![GIF](assets/gg.gif) -->
 
-💻 Live [demo](https://https://saria-ugc.netlify.app/)
+💻 Live [demo](https://saria-ugc.netlify.app/)
 
 ---
 
