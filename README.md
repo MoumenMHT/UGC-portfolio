@@ -12,12 +12,11 @@
 
 --- 
 
-![Portfolio Template](assets/main.png)
 
 <!-- 
 ![GIF](assets/gg.gif) -->
 
-💻 Live [demo](https://hrpaul.web.app/)
+💻 Live [demo](https://https://saria-ugc.netlify.app/)
 
 ---
 
